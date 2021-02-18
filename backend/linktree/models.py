@@ -9,6 +9,8 @@ class User(models.Model):
 
 class Link(models.Model):
     username = models.ForeignKey(User, on_delete = models.CASCADE)
-    title = models.CharField(max_length = 15)
-    link = models.URLField()
+    title = models.CharField(max_length = 50)
+    url = models.URLField()
+
+
     
