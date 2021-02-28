@@ -1,0 +1,33 @@
+.divStyle {
+    border: solid;
+    border-color: #ffffff;
+    text-align: center;
+    margin: 2.5vh 0 0 2.5vh;
+    height: 7vh;
+    width: 75vw;
+}
+
+.divStyle:hover .aStyle {
+    color: #000000;
+}
+
+.divStyle:hover {
+    background-color: #ffffff;
+}
+
+.aStyle{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 3vh;
+    width: 100%;
+}
+
+.aStyle:hover {
+    color: #000000;
+}
+.buttonStyle {
+    background-color: transparent;
+    border: none;
+    margin-top: 1.5vh;
+    width: 100%;
+}

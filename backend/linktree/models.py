@@ -8,7 +8,11 @@ class User(models.Model):
     color2 = models.CharField(max_length = 6)
 
 class Link(models.Model):
-    username = models.ForeignKey(User, on_delete = models.CASCADE)
-    title = models.CharField(max_length = 15)
-    link = models.URLField()
+    username = models.ForeignKey(User, related_name = 'links', on_delete = models.CASCADE)
+    title = models.CharField(max_length = 50)
+    url = models.URLField()
+    def __str__(self):
+        return f'{self.title} \\ {self.url}'
+
+
     
