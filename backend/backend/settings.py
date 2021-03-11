@@ -127,13 +127,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = [
-<<<<<<< HEAD
     'http://localhost:3000'
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = "/media/"  
-=======
-    'https://localhost:3000'
-]
->>>>>>> d77861584741b88569370cb81b9d0afbb22c2115

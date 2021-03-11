@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from  .models import User, Link
+from .models import User, Link
 
 class UserSerializer(serializers.ModelSerializer):
     links = serializers.StringRelatedField(many = True)
