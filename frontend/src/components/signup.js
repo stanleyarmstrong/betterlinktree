@@ -5,7 +5,7 @@ function Signup() {
     const history = useHistory();
     const handleSubmit = (event) => {
         event.preventDefault();
-        history.push("/profile/:username/create");
+        history.push("/profile/:username/edit");
     };
     return (
         <div>

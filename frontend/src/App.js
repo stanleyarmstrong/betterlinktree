@@ -7,6 +7,9 @@ import User from './components/user';
 import Home from './components/home';
 import Login from './components/login';
 import Signup from './components/signup';
+import Edit from './components/edit';
+import Dashboard from './components/dashboard';
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,6 +23,8 @@ function App() {
         <Route path = '/signup'>
           <Signup />
         </Route>
+        <Route path = '/profile/:username' component = {Dashboard} />
+        <Route path = '/profile/:username/edit' component = {Edit} />
         <Route path = '/:username' component = {User} />
       </Switch>  
     </BrowserRouter>

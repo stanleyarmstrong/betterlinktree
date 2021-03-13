@@ -6,7 +6,6 @@ function Login() {
     const handleSubmit = (event) => {
         event.preventDefault();
         history.push("/profile/:username");
-
     }
     return (
         <div>
@@ -17,7 +16,6 @@ function Login() {
                 <input type = "text" placeholder = "username" />
                 <input type = "password" placeholder = "password"/>
                 <input type = "submit" value = "submit"/>
-                
             </form>
         </div>
     )
